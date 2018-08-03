@@ -1,0 +1,24 @@
+.form-style{
+	margin:0 auto;
+	max-width: 350px;
+	background-color: white;
+	border-radius: 4px;
+	padding:10px 10px 10px 10px;
+	color: black;
+
+}
+.wrapper{
+	height: 700px;
+	background-image: url("https://www.bucksmore.com/app/uploads/2015/12/BNC-2005-089-1200x798.jpg");
+	color: white;
+
+}
+.required label:after{content:"*"}
+
+input.ng-invalid.ng-touched{
+	border: 1px solid red;
+}
+
+input.ng-valid{
+	border: 1px solid green;
+}

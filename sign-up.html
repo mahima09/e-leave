@@ -1,0 +1,99 @@
+<html lang="en" ng-app="leaveSysApp">
+<head>
+	<title>leave management</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="sign-up.css">
+	<script src="angular/angular.min.js"></script>
+</head>
+<body>
+	<div class="wrapper-up">
+	  <div>
+	    <h1 style="font-family:times new roman;text-align:center;font-size:60px;">sign-up</h1>
+	  </div>
+	    <div class="form-style-up">
+
+	    <form action="signup_jdbc.jsp" method="post" name="signupForm">
+	      <div class="form-group">
+	      	<div class="input-group">
+		        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+		        <input type="text" class="form-control" id="user-name" placeholder="enter your name" name="name" required ng-model="user.name">
+	        </div>
+	      </div>
+
+	      <div class="form-group">
+	        <div class="input-group">
+		        <span class="input-group-addon"><i class="glyphicon glyphicon-phone"></i></span>
+		        <input type="number" class="form-control" id="user-phone-no" placeholder="enter your mobile-no" name="phone-no" required ng-model="user.mobile" ng-minlength=10 ng-maxlength=10 ng-pattern="/^[7-9][0-9]{9}$/">
+		    </div>
+		  </div>
+		  <div style="color:red;" ng-show="signupForm.phone-no.$error.pattern">Please enter valid number!</div>
+    
+		  <!-- <div style="color:red;" ng-show="signupForm.phone-no.$error.number">Valid phone number is required</div>
+	      <div style="color:red;" ng-show="((signupForm.phone-no.$error.minlength || signupForm.phone-no.$error.maxlength))">phone number should be 10 digits</div>
+		   -->
+
+	      <div class="form-group">
+	       	<div class="input-group">
+		        <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+		        <input type="date" class="form-control" id="user-dob"  name="dob" required ng-model="user.date">
+	      	</div>
+	      </div>	
+	      <div class="form-group">
+	        <div class="input-group">
+		        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+		        <input type="email" class="form-control" id="user-email" placeholder="enter your email" name="email" required ng-model="user.mail">
+		    </div>
+	      </div>
+	      <div style="color:red;" ng-show="signupForm.email.$error.email">this is doesn't like a valid email</div>
+	      <div class="form-group">
+	        <div class="input-group">
+		        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+		        <input type="password" class="form-control" id="user-pass" placeholder="enter your password" name="password" required ng-model="user.pass" ng-minlength=6 ng-maxlength=15><span class="eye input-group-addon"><i class="glyphicon glyphicon-eye-close" id="open"></i></span>
+		    </div>
+	      </div>
+	      <div style="color:red;" ng-show="signupForm.password.$error.minlength">password must be atleast six character long</div>
+			<div style="color:red;" ng-show="signupForm.password.$error.maxlength">password must be atmost 8 character long</div>
+			
+
+	      <div class="form-group">
+	        <div class="input-group">
+		        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+		        <input type="password" class="form-control" id="user-repass" placeholder="confirm password" name="repassword" required ng-model="user.repass" ng-minlength=6 ng-maxlength=15>
+		    </div>
+	      </div>
+	      <div style="color:red;" ng-show="signupForm.repassword.$error.minlength">password must be altest six character long</div>
+		  <div style="color:red;" ng-show="signupForm.repassword.$error.maxlength">password must be atmost 8 character long</div>
+
+
+	      <div class="form-group ">
+	        <label for="user-select">`Select-Department</label>
+	        <select class="form-control" name="dept">
+	          <option>IT</option>
+	          <option>MBA</option>
+	          <option>PGDM</option>
+	          </select>
+	      </div>
+	      <div class="form-group ">
+	        <label for="user-select">Select-Role</label>
+	        <select class="form-control" name="role">
+	          <option>Admin</option>
+	          <option>Faculty</option>
+	        </select>
+	      </div>
+
+	      <div class="buttons">
+	        <!--  <button type="reset" class="btn btn-default btn-lg" id="user-rebutton"  style="margin-right:10px;">Reset</button>-->
+	        <button type="submit" class="sub btn btn-default btn-lg" id="user-subbutton" >Submit</button>
+	      </div>
+	    </form>
+
+	    </div>
+	    <!-- form-style closed -->
+	  </div>
+	</div>
+
+	<script src="jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="leave_script.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+
+<html lang="en" ng-app="leaveSysApp">
+<head>
+	<title>leave management</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="balloon.css">
+	<link rel="stylesheet" type="text/css" href="login.css">
+	<script src="angular.min.js"></script>
+
+
+</head>
+<body>
+	<div class="wrapper">
+		  <div>
+		    <h3 style="font-family: Brush Script MT, Brush Script Std, cursive;	font-size: 80px; text-align: center;">leave management system</h3>
+		  </div>
+	    <div class="form-style">
+				  <div class="heading-style">
+			        <h3>login-form</h3>
+			        <hr>
+			      </div>
+
+			      <form action="login_jdbc.jsp" name="loginForm">
+
+			      <!--  <div class="form-group required ">
+			        <label for="user-name">name </label>
+			        <input type="name" class="form-control" id="user-name" placeholder="enter your name" name="name" required ng-model="user.name">
+			      </div>-->
+			      
+			      <div class="form-group required">
+			        <label for="user-email">email </label>
+			        <input type="email" class="form-control" id="user-email" placeholder="enter your email" name="email" required ng-model="user.mail">
+			      </div>
+			      <div style="color:red;" ng-show="loginForm.email.$error.email">this is doesn't like a valid email</div>
+
+			      <div class="form-group required">
+			        <label for="user-pass">password </label>
+			        <input type="password" class="form-control" id="user-pass" placeholder="enter your password" name="password" required ng-model="user.pass" ng-minlength=6 ng-maxlength=15>
+			      </div>
+			      <div style="color:red;" ng-show="loginForm.password.$error.minlength">password must be altest six character long</div>
+			      <div style="color:red;" ng-show="loginForm.password.$error.maxlength">password must be atmost 8 character long</div>
+			      
+			      <div class="form-group required">
+			        <label for="user-select">Select-Role </label>
+			        <select required class="form-control" required name="role">
+			          <option>Admin</option>
+			          <option>Faculty</option>
+			        </select>
+			      </div>
+					
+				<div class="form-group">
+                            <div class="g-recaptcha" data-sitekey="6LfKURIUAAAAAO50vlwWZkyK_G2ywqE52NU7YO0S" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
+                            <!-- <input class="form-control d-none" data-recaptcha="true" required data-error="Please complete the Captcha"> -->
+                                    <div class="help-block with-errors"><div>
+                 </div>
+
+			      <div>
+			        <button type="submit" class="btn btn-default btn-lg" id="user-button"  style="margin-right:10px;" ng-disabled="loginForm.$invalid"  data-balloon-length="medium" data-balloon="😃 Want's login with us!" data-balloon-pos="right" >login</button>
+			      </div>
+
+			    </form>
+
+	    </div>
+	    <!-- form-style closed -->
+	  </div>
+	</div>
+
+
+	<script src="jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+    <script src="leave_script.js"></script>
+	<script src='https://www.google.com/recaptcha/api.js'></script>
+    
+</body>
+</html>

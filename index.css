@@ -1,0 +1,139 @@
+
+/* fac_index.css starts */
+
+body {
+    background-color: white;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+#menu{
+	background-color: #F3F3E8;
+	height: 500px;
+	padding-top: 20px;
+	text-align: center;
+}
+#app .navbar a{
+	color: white;
+
+}
+#app .navbar {
+
+    background-color: green;
+}
+.circle{
+	height: 170px;
+	width: 170px;
+	overflow: hidden;
+	border: 4px solid white;
+	border-radius: 50% ;
+	margin-left: 7px;
+	}
+img {
+    max-width: 100%;
+    height: 170px;
+}
+.p-image .file-upload{
+		display: none;
+	}
+.p-image{
+	position: absolute;
+	top: 160px;
+	right: 50px ;
+	color: #666666;
+	
+}
+.p-image .upload-button{
+	font-size: 25px;
+}
+.p-image .upload-button:hover{
+	color: #999;
+}
+#app #menu #name{
+color:black;
+font-family: times new roman;
+padding-top: 5px;
+}
+#app #menu #welcome{
+	color:black;
+	font-family: helvetica;
+	padding-top: 5px;
+	padding-bottom: 20px;
+
+}
+#app #menu #btn{
+padding-top:10px;
+padding-bottom:10px;
+margin-bottom: 20px;
+}
+.btn-success{
+	background-color: green;
+}
+#display{
+
+	background-color: #F3F3E8;
+	height: 500px;
+	padding-top: 20px;
+}
+#app #display .download{
+	text-align: center;
+	padding-top: 150px;
+}
+#app #display .link{
+	text-align: center;
+	/*cursor: pointer;*/
+}
+#app #display .apply{
+margin-left:20px;
+}
+#app #display .submit{
+	margin-top: 50px;
+	margin-left:20px;
+}
+#app #display .apply .form-group{
+	padding-right: 300px;
+}
+#leave-requested1, #leave-requested2{
+	border-radius: 1px;
+}
+#app #display .start{
+	margin: 0 auto;
+	max-width: 500px;
+	text-align: center;
+	margin-top: 130px;
+	color: #00BFFF;
+}
+/*datatable css start*/
+
+table.datatable tbody tr{
+	background-color: initial;
+
+}
+#history_info{
+	display: none;
+}
+#history_length{
+	display: none;
+}
+#history_previous{
+	display: none;
+}
+#history_next{
+	display: none;
+}
+#history_paginate{
+	display: none;
+}
+#history_filter input{
+	/* width: 400px;
+	font-size: 16px;
+	color: gray; */
+	display:none;
+
+}
+#history_filter {
+	color: transparent;
+
+}
+/*datatable css end*/
+
+/* <fac_index.css end */

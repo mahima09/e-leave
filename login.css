@@ -1,0 +1,25 @@
+.form-style{
+	margin:0 auto;
+	max-width: 350px;
+	background-color: white;
+	border-radius: 4px;
+	padding:10px 10px 10px 10px;
+	color: black;
+
+}
+.wrapper{
+	height: 700px;
+	background-image: url("https://wallpapertag.com/wallpaper/full/9/b/4/267751-top-background-images-1920x1080-for-iphone.jpg");
+	padding-top: 50px;
+	color: white;
+
+}
+.required label:after{content:"*"}
+
+input.ng-invalid.ng-touched{
+	border: 1px solid red;
+}
+
+input.ng-valid{
+	border: 1px solid green;
+}

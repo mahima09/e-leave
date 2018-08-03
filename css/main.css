@@ -1,0 +1,46 @@
+body{
+	height: 100%;
+	width: 100%;
+	font-family: sans-serif;
+
+}
+
+.wrapper{
+max-width: 600px;
+margin-left: auto;
+margin-right: auto;
+	
+}
+
+.box{
+	height: 500px;
+	background-color: #e7e7e7;
+	border:1px solid rgba(0,0,0,0.87) ;
+	display: flex;
+
+}
+#box1{
+background-color: teal;
+border: 2px solid black;
+width: 550px;
+position: absolute;	
+bottom: 400px;
+
+}
+#box2{
+background-color: orange;
+
+}
+#box3{
+background-color: yellow;
+
+}
+	
+
+.col-4{
+	background-color: #ddd;
+	width: 33.33%;
+	border-right: 1px solid black;
+	padding: 4px;
+}
+

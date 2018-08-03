@@ -1,0 +1,105 @@
+html{
+	overflow: visible;
+	height: initial;
+	display: block;
+	margin: 0 auto;
+	font-family: helvetica;
+}
+.container-fluid{
+	width: 100%;
+	position: relative;
+	text-align: center;
+    color: white;
+}
+/*header start*/
+.top-left {
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    
+}
+.top-right1 {
+    position: absolute;
+    top: 30px;
+    right: 140px;
+    
+}
+.top-right2 {
+    position: absolute;
+    top: 30px;
+    right: 25px;
+    
+}
+#link{
+	color: white;
+	font-family: helvetica;
+	text-decoration: none;
+	font-size: 20px;
+	
+}
+#link:hover{
+	color: orange;
+}
+
+/*header end*/
+/*left-nav section start*/
+/*.left-nav{
+	position: absolute;
+	top: 200px;
+    left: 25px;
+}
+.active{
+	color: #00BFFF;
+}
+.indicator{
+	border: 4px solid #00BFFF;
+	width: 20px;
+	padding-right: 80px;
+	margin-bottom: 25px;
+}
+.step{
+	color: black;
+	display: flex;
+}
+*/
+.wrap{
+	background-image: url("F:\\Acadview\\projects\\leave_mgnt_system\\images\\boy.jpg");
+}
+#logo{
+	color: white;
+	font-family: cursive;
+	text-decoration: none;
+	font-size: 60px;
+
+}
+#logo:hover{
+	color: orange;
+}
+/*carousel*/
+
+.carousel-control.right, .carousel-control.left{
+	/*background-image: none;*/
+	color:  orange;
+}
+.carousel-indicators li{
+	border-color:  orange;
+	color:orange;
+}
+.carousel-indicators li.active	{
+	background-color: orange;
+}
+.caption1{
+	position: absolute;
+    top: 80px;
+    right: 750px;
+
+}
+
+
+h1{
+	font-size: 80px;
+}
+
+.p-size{
+	font-size: 20px;
+}

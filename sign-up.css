@@ -1,0 +1,29 @@
+
+/* sign-up.css start */
+.form-style-up{
+	margin:0 auto;
+	max-width: 400px;
+	background-color: white;
+	border-radius: 4px;
+	padding:10px 10px 10px 10px;
+	color: black;
+
+}
+.wrapper-up{
+	height: 750px;
+	background-image: url("https://static.pexels.com/photos/531880/pexels-photo-531880.jpeg");
+	padding-top: 20px;
+	color: white;
+
+}
+
+.form-group .input-group input.ng-invalid.ng-touched.ng-empty{
+	border: 1px solid red;
+}
+
+.form-group .input-group input.ng-valid{
+	border: 1px solid green;
+}
+
+/* sign-up.css end */
+
